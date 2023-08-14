@@ -16,6 +16,7 @@
   </head>
   <body>
     <header>
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -36,7 +37,7 @@
             <ul
               class="navbar-nav d-flex justify-content-end align-items-center"
             >
-              <li class="dropdown nav-item">
+              <li class="dropdown nav-item dropdownItem">
                 <button class="dropdown-toggle" data-bs-toggle="dropdown">
                   Oferta
                 </button>
@@ -73,20 +74,25 @@
           </div>
         </div>
       </nav>
+
+      <!-- Intro -->
+      <section class="Intro container-fluid row">
+        <div class="Intro__left column col-lg-7 d-flex flex-column justify-content-center">
+          <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
+          <p>
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+            realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+            podejściem do każdego projektu.
+          </p>
+          <div class="Intro__left__buttons">
+            <button>Skontaktuj się z nami</button>
+            <button>Zobacz nasze realizacje</button>
+          </div>
+        </div>
+        <div class="Intro__right column col-lg-5">
+          <img alt="garden" src="./assets/bg.jpg" />
+        </div>
+      </section>
     </header>
   </body>
 </html>
-
-<style>
-  .navbar {
-    padding: 1rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  .navbar-nav {
-    width: 100%;
-  }
-  .navbar-nav > li {
-    margin-right: 2rem;
-  }
-</style>
