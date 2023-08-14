@@ -10,39 +10,56 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="d-flex justify-content-between container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/logo.svg" alt="logo" />
           </a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="navbar-nav">
-            <li class="dropdown nav-item">
-              <button class="dropdown-toggle" data-bs-toggle="dropdown">
-                Oferta
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item">Projekty</a>
-                </li>
-                <li>
-                  <a class="dropdown-item">Wizualizacje</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">O firmie</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Realizacje</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Kontakt</a>
-            </li>
-            <li class="nav-item dropdown"></li>
-          </ul>
+          <div class="navbar-collapse collapse d-flex justify-content-end">
+            <ul class="navbar-nav">
+              <li class="dropdown nav-item">
+                <button class="dropdown-toggle" data-bs-toggle="dropdown">
+                  Oferta
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item">Projekty</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item">Wizualizacje</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">O firmie</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Realizacje</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Kontakt</a>
+              </li>
+              <li class="nav-item dropdown">
+                <img
+                  class="dropdown-toggle"
+                  src="./assets/search.svg"
+                  alt="search icon"
+                  data-bs-toggle="dropdown"
+                />
+                <form class="dropdown-menu">
+                  <input placeholder="Czego potrzebujesz ?" />
+                </form>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
   </body>
 </html>
+
+<style>
+  .navbar {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+</style>
