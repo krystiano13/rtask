@@ -10,12 +10,23 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg">
-        <div class="d-flex justify-content-between container-fluid">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/logo.svg" alt="logo" />
           </a>
-          <div class="navbar-collapse collapse d-flex justify-content-end">
-            <ul class="navbar-nav">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav d-flex justify-content-end">
               <li class="dropdown nav-item">
                 <button class="dropdown-toggle" data-bs-toggle="dropdown">
                   Oferta
@@ -58,8 +69,7 @@
 </html>
 
 <style>
-  .navbar {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
+    .navbar-nav {
+        width : 100%;
+    }
 </style>
