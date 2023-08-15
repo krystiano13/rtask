@@ -1,6 +1,6 @@
 .Intro {
   .column {
-    img {
+    .Intro-icon {
       width: 100%;
       height: 56rem;
       object-fit: cover;
@@ -10,22 +10,49 @@
   }
 
   &__left {
-    * {
-        margin-top : 2rem;
-        margin-bottom: 2rem;
-        margin-left : 5rem;
+    h1,
+    p,
+    &__buttons {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 5rem;
     }
 
     h1 {
-        max-width : 65%;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size : 5rem;
+      max-width: 65%;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 5rem;
     }
 
     p {
-        max-width : 50%;
-        font-size : 1.25rem;
+      max-width: 50%;
+      font-size: 1.26rem;
+    }
+
+    &__buttons {
+      width: auto;
+
+    
+      button {
+        width: auto;
+        font-size: 1.3rem;
+        border-radius: 10rem;
+        background-color: transparent;
+        border: solid 0.15rem var(--green);
+        color : var(--green);
+        padding : 0.8rem;
+        padding-left : 2rem;
+        padding-right : 2rem;
+
+        .button-icon {
+          height: 1.7ch;
+        }
+      }
+
+      .button-filled {
+        background-color: var(--green);
+      }
     }
   }
 }
