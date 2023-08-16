@@ -7,6 +7,7 @@
 
   position : sticky;
   top : 0;
+  z-index: 1000;
 
   @media screen and (max-width: 992px) {
     padding-left: 1rem;
@@ -31,7 +32,7 @@
 
 .Intro .column, .Intro-slider {
   height : 94vh;
-  min-height: 50rem;
+  min-height: 800px;
   padding: 0;
   background-color: var(--beige);
 }
