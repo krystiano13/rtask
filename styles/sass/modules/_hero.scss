@@ -4,6 +4,16 @@
     height: 90vh;
     min-height: 600px;
 
+    @media screen and (max-width: 992px) {
+      width: 100vw;
+      min-height: 400px;
+    }
+
+    @media screen and (min-width: 1400px) {
+      height: 93vh;
+      min-height: 600px;
+    }
+
     &__slideButtons {
       &__btn {
         width: 7.5rem;
@@ -28,11 +38,6 @@
         background-color: #fae4d1;
       }
     }
-
-    @media screen and (min-width: 1400px) {
-      height: 93vh;
-      min-height: 600px;
-    }
   }
   .column {
     .Intro-icon {
@@ -45,12 +50,21 @@
 
   &__left {
     background-color: var(--beige);
+    @media screen and (max-width: 992px) {
+      width: 100vw;
+      height: 93vh;
+      min-height: 600px;
+    }
     h1,
     p,
     &__buttons {
       margin-top: 2rem;
       margin-bottom: 2rem;
       margin-left: 5rem;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 2rem;
+      }
     }
 
     h1 {
@@ -58,6 +72,11 @@
       font-weight: 500;
       font-size: 3rem;
       max-width: 60%;
+
+      @media screen and (max-width: 992px) {
+        max-width: 85%;
+        font-size: 2rem;
+      }
 
       @media screen and (min-width: 1400px) {
         font-size: 5rem;
@@ -69,6 +88,11 @@
       max-width: 65%;
       font-size: 1.2rem;
 
+      @media screen and (max-width: 992px) {
+        max-width: 80%;
+        font-size: 1rem;
+      }
+
       @media screen and (min-width: 1400px) {
         max-width: 50%;
         font-size: 1.26rem;
@@ -78,7 +102,12 @@
     &__buttons {
       width: auto;
 
-      .button-default, button {
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+
+      .button-default,
+      button {
         width: auto;
         font-size: 1rem;
         border-radius: 10rem;
@@ -89,6 +118,14 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         transition: background 250ms;
+
+        @media screen and (max-width: 992px) {
+          font-size: 0.8rem;
+          padding: 0.5rem;
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+          margin-top: 1rem;
+        }
 
         @media screen and (min-width: 1400px) {
           font-size: 1.3rem;
@@ -112,7 +149,6 @@
       .button-filled:hover {
         background-color: var(--lightGreen);
       }
-
     }
   }
 }
@@ -121,4 +157,9 @@
   position: fixed;
   width: calc(5 / 12 * 100%);
   z-index: -1;
+
+  @media screen and (max-width: 992px) {
+    position: absolute;
+    width: 100vw;
+  }
 }
