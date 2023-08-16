@@ -24,12 +24,12 @@
         transition: background-color 250ms;
         will-change: background-color;
 
-        @media screen and (min-width : 2400px) {
+        @media screen and (min-width: 2400px) {
           width: 10rem;
           height: 10rem;
         }
 
-        @media screen and (min-width : 3200px) {
+        @media screen and (min-width: 3200px) {
           width: 14rem;
           height: 14rem;
         }

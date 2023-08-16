@@ -1,0 +1,52 @@
+.navbar-nav {
+  width: 100%;
+  li > * {
+    color: black;
+  }
+  li {
+    margin-right: 2rem;
+  }
+  
+  @media screen and (min-width : 2400px) {
+    li {
+        margin-right : 3rem;
+    }
+
+    li > *{
+        font-size: 1.5rem;
+    }
+
+    li > img {
+        height : 2rem;
+    }
+  }
+
+  @media screen and (min-width : 3200px) {
+    li {
+        margin-right: 4rem;
+    }
+
+    li > * {
+        font-size: 2.5rem;
+    }
+
+    li > img {
+        height : 3rem;
+    }
+  }
+}
+
+.navbar-brand {
+  padding-left: 1rem;
+  @media screen and (min-width: 2400px) {
+    height: 2.5rem;
+  }
+
+  @media screen and (min-width: 3200px) {
+    height: 4rem;
+  }
+
+  img {
+    height: 100%;
+  }
+}
