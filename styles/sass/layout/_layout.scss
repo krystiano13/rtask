@@ -5,8 +5,8 @@
   background-color: white;
   box-sizing: border-box;
 
-  position : sticky;
-  top : 0;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 
   @media screen and (max-width: 992px) {
@@ -30,13 +30,14 @@
   padding: 0;
 }
 
-.Intro .column, .Intro-slider {
-   height: 90vh;
-    min-height: 600px;
+.Intro .column,
+.Intro-slider {
+  height: 90vh;
+  min-height: 600px;
 
-    @media screen and (min-width : 1400px){
-      height: 93vh;
-      min-height: 600px;
-    }
+  @media screen and (min-width: 1400px) {
+    height: 93vh;
+    min-height: 600px;
+  }
   padding: 0;
 }
