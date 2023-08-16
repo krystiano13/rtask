@@ -31,8 +31,12 @@
 }
 
 .Intro .column, .Intro-slider {
-  height : 94vh;
-  min-height: 800px;
+   height: 90vh;
+    min-height: 600px;
+
+    @media screen and (min-width : 1400px){
+      height: 93vh;
+      min-height: 600px;
+    }
   padding: 0;
-  background-color: var(--beige);
 }
