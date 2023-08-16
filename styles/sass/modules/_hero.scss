@@ -6,17 +6,17 @@
 
     &__slideButtons {
       &__btn {
-        width : 7.5rem;
-        height : 7.5rem;
-        border : none;
-        background-color: #F5F0EC;
+        width: 7.5rem;
+        height: 7.5rem;
+        border: none;
+        background-color: #f5f0ec;
 
         transition: background-color 250ms;
         will-change: background-color;
 
         img {
-          width : 25%;
-          height : 25%;
+          width: 25%;
+          height: 25%;
         }
 
         #right {
@@ -78,7 +78,7 @@
     &__buttons {
       width: auto;
 
-      button {
+      .button-default, button {
         width: auto;
         font-size: 1rem;
         border-radius: 10rem;
@@ -88,6 +88,7 @@
         padding: 0.8rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        transition: background 250ms;
 
         @media screen and (min-width: 1400px) {
           font-size: 1.3rem;
@@ -100,9 +101,18 @@
         }
       }
 
+      .button-default:hover {
+        background-color: #f5f0ec;
+      }
+
       .button-filled {
         background-color: var(--green);
       }
+
+      .button-filled:hover {
+        background-color: var(--lightGreen);
+      }
+
     }
   }
 }
