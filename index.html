@@ -79,12 +79,19 @@
                 <a href="#" class="nav-link">Wizualizacje</a>
               </li>
 
-              <li id="search-toggler" class="nav-item">
+              <li class="nav-item d-block d-lg-none">
+                <form class="search-bar search-bar-static position-static d-block d-lg-none">
+                  <input placeholder="Czego potrzebujesz ?" />
+                  <button type="submit">Szukaj</button>
+                </form>
+              </li>
+
+              <li id="search-toggler" class="nav-item d-none d-lg-block">
                 <img src="./assets/search.svg" alt="search icon" />
               </li>
             </ul>
 
-            <form class="search-bar search-bar-hidden">
+            <form class="search-bar search-bar-hidden d-none d-lg-block">
               <input placeholder="Czego potrzebujesz ?" />
               <button type="submit">Szukaj</button>
             </form>
