@@ -1,17 +1,81 @@
 .search-bar {
-    position : fixed;
-    top : 7%;
-    right : 0;
-    background-color: white;
-    padding : 1rem;
-    z-index: -1;
-    opacity : 1;
+  position: fixed;
+  top: 4rem;
+  right: 0;
+  background-color: white;
+  padding: 1rem;
+  z-index: -1;
+  opacity: 1;
 
-    transition: transform 250ms, opacity 250ms;
-    will-change: transform, opacity;
+  input {
+    font-size: 1rem;
+    padding: 0.25rem;
+    width: 20rem;
+    border: solid 2px black;
+    outline: none;
+
+    transition: border-color 250ms;
+  }
+
+  input:focus {
+    border: solid 2px var(--lightGreen);
+  }
+
+  button {
+    padding: calc(0.25rem + 1px);
+    width: 6rem;
+    border: none;
+    background-color: var(--green);
+    color: white;
+
+    transition: background-color 250ms;
+  }
+
+  button:hover {
+    background-color: var(--lightGreen);
+  }
+
+  @media screen and (min-width: 2400px) {
+    top: 6rem;
+    padding: 1.5rem;
+
+    input {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      width: 24rem;
+      margin-right : 1rem;
+    }
+
+    button {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      width : 8rem;
+    }
+  }
+
+  @media screen and (min-width: 3200px) {
+    top: 10rem;
+    padding: 2.5rem;
+
+    input {
+      font-size: 2.25rem;
+      padding: 1rem;
+      width: 40rem;
+      margin-right : 2rem;
+    }
+
+    button {
+      font-size: 2.25rem;
+      padding: 1rem;
+      width : 16rem;
+    }
+  }
+
+  transition: transform 250ms, opacity 250ms;
+  will-change: transform, opacity;
 }
 
 .search-bar-hidden {
-    transform : translateY(-200%);
-    opacity : 0;
+  transform: translateY(-10rem);
+  opacity: 0;
 }

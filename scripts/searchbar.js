@@ -5,4 +5,6 @@ const toggleSearchBar = () => {
     searchBar.classList.toggle('search-bar-hidden');
 }
 
-searchToggler.addEventListener("click", toggleSearchBar);
+if (searchToggler && searchBar) {
+    searchToggler.addEventListener("click", toggleSearchBar);
+}
