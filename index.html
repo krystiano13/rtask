@@ -38,7 +38,11 @@
             data-bs-toggle="collapse"
             data-bs-target="#nav"
           >
-            <span class="navbar-toggler-icon">Test</span>
+            <div class="navbar-toggler-icon d-flex flex-column justify-content-center align-items-center">
+              <div class="toggler-icon-stripe"></div>
+              <div class="toggler-icon-stripe"></div>
+              <div class="toggler-icon-stripe"></div>
+            </div>
           </button>
           <div id="nav" class="collapse navbar-collapse">
             <ul
@@ -91,7 +95,7 @@
               </li>
             </ul>
 
-            <form class="search-bar search-bar-hidden d-none d-lg-block">
+            <form id="searchBar" class="search-bar search-bar-hidden d-none d-lg-block">
               <input placeholder="Czego potrzebujesz ?" />
               <button type="submit">Szukaj</button>
             </form>

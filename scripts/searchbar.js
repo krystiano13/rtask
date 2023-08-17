@@ -1,4 +1,4 @@
-const searchBar = document.querySelector('.search-bar');
+const searchBar = document.querySelector("#searchBar");
 const searchToggler = document.querySelector('#search-toggler');
 
 const toggleSearchBar = () => {
