@@ -94,7 +94,7 @@
       font-size: 3rem;
       max-width: 60%;
 
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 700px) {
         max-width: 85%;
         font-size: 2rem;
       }
@@ -118,7 +118,7 @@
       max-width: 65%;
       font-size: 1.2rem;
 
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 700px) {
         max-width: 80%;
         font-size: 1rem;
       }
@@ -142,7 +142,7 @@
     &__buttons {
       width: auto;
 
-      @media screen and (max-width: 992px) {
+      @media screen and (max-width: 700px) {
         flex-direction: column;
       }
 
@@ -159,7 +159,7 @@
         padding-right: 1.5rem;
         transition: background 250ms;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 700px) {
           font-size: 0.8rem;
           padding: 0.5rem;
           padding-left: 1.25rem;
