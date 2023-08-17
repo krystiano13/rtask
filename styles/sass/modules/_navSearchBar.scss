@@ -75,20 +75,20 @@
 }
 
 .search-bar-static {
-    top : 0;
-    right : 0;
-    left : 0;
-    bottom : 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 
-    input {
-        width : 12rem;
-        font-size: 0.9rem;
-    }
+  input {
+    width: 10rem;
+    font-size: 0.8rem;
+  }
 
-    button {
-        width : 5rem;
-        font-size: 0.9rem;
-    }
+  button {
+    width: 4rem;
+    font-size: 0.8rem;
+  }
 }
 
 .search-bar-hidden {

@@ -38,7 +38,9 @@
             data-bs-toggle="collapse"
             data-bs-target="#nav"
           >
-            <div class="navbar-toggler-icon d-flex flex-column justify-content-center align-items-center">
+            <div
+              class="navbar-toggler-icon d-flex flex-column justify-content-center align-items-center"
+            >
               <div class="toggler-icon-stripe"></div>
               <div class="toggler-icon-stripe"></div>
               <div class="toggler-icon-stripe"></div>
@@ -48,7 +50,10 @@
             <ul
               class="navbar-nav d-flex justify-content-end align-items-center"
             >
-              <li id="dropdown" class="dropdown nav-item dropdownItem d-none d-lg-block">
+              <li
+                id="dropdown"
+                class="dropdown nav-item dropdownItem d-none d-lg-block"
+              >
                 <button class="dropdown-toggle" data-bs-toggle="dropdown">
                   Oferta
                 </button>
@@ -84,7 +89,9 @@
               </li>
 
               <li class="nav-item d-block d-lg-none">
-                <form class="search-bar search-bar-static position-static d-block d-lg-none">
+                <form
+                  class="search-bar search-bar-static position-static d-block d-lg-none"
+                >
                   <input placeholder="Czego potrzebujesz ?" />
                   <button type="submit">Szukaj</button>
                 </form>
@@ -95,7 +102,10 @@
               </li>
             </ul>
 
-            <form id="searchBar" class="search-bar search-bar-hidden d-none d-lg-block">
+            <form
+              id="searchBar"
+              class="search-bar search-bar-hidden d-none d-lg-block"
+            >
               <input placeholder="Czego potrzebujesz ?" />
               <button type="submit">Szukaj</button>
             </form>
@@ -190,15 +200,75 @@
         </div>
       </section>
 
-      <article></article>
-
-      <style>
-        article {
-          width: 100%;
-          height: 100vh;
-          background-color: red;
-        }
-      </style>
+      <!-- Offer -->
+      <section class="Offer container-fluid">
+        <div class="Offer__text container-lg">
+          <p>Oferta</p>
+          <h2>Działamy <i>kompleksowo</i></h2>
+          <p class="lead">
+            Oferujemy kompletną obsługę inwestycji terenów zielonych.
+            Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
+            a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+          </p>
+        </div>
+        <div class="Offer__cards row justify-content-center">
+          <section
+            class="Offer__cards__card col-3 d-flex flex-column justify-content-center align-items-start ms-5 me-5"
+          >
+            <img src="./assets/pencil.png" alt="pencil" />
+            <h3>Projekty</h3>
+            <p>
+              Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+              wykorzystaniem istniejącej przestrzeni.
+            </p>
+            <a class="Offer__cards__card__link">
+              Dowiedz się więcej
+              <img
+                class="link-icon"
+                src="./assets/rightArrow.svg"
+                alt="arrow faced to the right"
+              />
+            </a>
+          </section>
+          <section
+            class="Offer__cards__card col-3 d-flex flex-column justify-content-center align-items-start ms-5 me-5"
+          >
+            <img src="./assets/eye.png" alt="eye" />
+            <h3>Wizualizacje</h3>
+            <p>
+              Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+              animowanego w technologii 3D.
+            </p>
+            <a class="Offer__cards__card__link">
+              Dowiedz się więcej
+              <img
+                class="link-icon"
+                src="./assets/rightArrow.svg"
+                alt="arrow faced to the right"
+              />
+            </a>
+          </section>
+          <section
+            class="Offer__cards__card col-3 d-flex flex-column justify-content-center align-items-start ms-5 me-5"
+          >
+            <img src="./assets/stars.png" alt="stars" />
+            <h3>Realizacje</h3>
+            <p>
+              Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+              zaawansowanych technologii.
+            </p>
+            <a class="Offer__cards__card__link"
+              >Dowiedz się więcej
+              <img
+                class="link-icon"
+                src="./assets/rightArrow.svg"
+                alt="arrow faced to the right"
+              />
+            </a>
+          </section>
+        </div>
+      </section>
     </header>
   </body>
 </html>

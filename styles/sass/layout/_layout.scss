@@ -33,7 +33,8 @@
 }
 
 .Intro .column,
-.Intro-slider {
+.Intro-slider,
+.Offer {
   height: 90vh;
   min-height: 600px;
 
@@ -42,4 +43,11 @@
     min-height: 600px;
   }
   padding: 0;
+}
+
+.Offer {
+  width : 100%;
+  background-color: var(--grey);
+  box-sizing: border-box;
+  height: auto;
 }
