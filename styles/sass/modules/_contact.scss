@@ -1,41 +1,72 @@
 .Contact {
-    &__content {
-        background-color: var(--green);
-        width : 80%;
-        height : 80%;
-        
-        &__text__title {
-            color: var(--grey);
-            font-size : 3rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            max-width : 70%;
+  &__content {
+    background-color: var(--green);
+    width: 80%;
+    height: 80%;
 
-            i {
-                font-family: 'Inter', sans-serif;
-                color: var(--grey);
-            }
-        }
+    @media screen and (max-width: 992px) {
+      width: 95%;
+      height: 50%;
+      flex-wrap: nowrap;
 
-        &__other {
-            &__p {
-                font-size: 1.25rem;
-                color: var(--grey);
-                max-width : 60%;
-                margin-bottom : 1rem;
-                font-weight: 400;
-            }
-
-            &__btn {
-                margin-top : 1rem;
-                width : 50%;
-                color : var(--green);
-                border : none;
-                background-color: var(--grey);
-                border-radius: 2rem;
-                padding-top : 0.6rem;
-                padding-bottom : 0.6rem;
-            }
-        }
+      &__text {
+        width : calc(7/12 * 100%);
+      }
     }
+
+    &__text__title {
+      color: var(--grey);
+      font-size: 3rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      max-width: 70%;
+
+      @media screen and (max-width: 992px) {
+        font-size: 1rem;
+        max-width: none;
+      }
+
+      i {
+        font-family: "Inter", sans-serif;
+        color: var(--grey);
+      }
+    }
+
+    &__other {
+      @media screen and (max-width : 992px) {
+        width : calc(5/12 * 100%);
+      }
+      &__p {
+        font-size: 1.25rem;
+        color: var(--grey);
+        max-width: 60%;
+        margin-bottom: 1rem;
+        font-weight: 400;
+
+        @media screen and (max-width: 992px) {
+          font-size: 0.65rem;
+          max-width: 100%;
+        }
+      }
+
+      &__btn {
+        margin-top: 1rem;
+        width: 50%;
+        color: var(--green);
+        border: none;
+        background-color: var(--grey);
+        border-radius: 2rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+
+        @media screen and (max-width: 992px) {
+          font-size: 0.9rem;
+          max-width: 100%;
+          width: 90%;
+          padding-top: 0.4rem;
+          padding-bottom: 0.4rem;
+        }
+      }
+    }
+  }
 }

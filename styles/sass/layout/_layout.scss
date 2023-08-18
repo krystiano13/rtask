@@ -46,7 +46,7 @@
   width : 100%;
   background-color: var(--grey);
   box-sizing: border-box;
-  height: 105vh;
+  height: auto;
 
   @media screen and (max-width : 992px) {
     height : auto;
