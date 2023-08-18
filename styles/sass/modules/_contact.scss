@@ -1,0 +1,41 @@
+.Contact {
+    &__content {
+        background-color: var(--green);
+        width : 80%;
+        height : 80%;
+        
+        &__text__title {
+            color: var(--grey);
+            font-size : 3rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            max-width : 70%;
+
+            i {
+                font-family: 'Inter', sans-serif;
+                color: var(--grey);
+            }
+        }
+
+        &__other {
+            &__p {
+                font-size: 1.25rem;
+                color: var(--grey);
+                max-width : 60%;
+                margin-bottom : 1rem;
+                font-weight: 400;
+            }
+
+            &__btn {
+                margin-top : 1rem;
+                width : 50%;
+                color : var(--green);
+                border : none;
+                background-color: var(--grey);
+                border-radius: 2rem;
+                padding-top : 0.6rem;
+                padding-bottom : 0.6rem;
+            }
+        }
+    }
+}
