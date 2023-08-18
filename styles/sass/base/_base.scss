@@ -1,15 +1,21 @@
 * {
-    font-family: 'Inter', sans-serif;
-    color : black;
-    box-sizing: border-box;
-    padding : 0;
-    margin : 0;
+  font-family: "Inter", sans-serif;
+  color: black;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 :root {
-    --beige: #DCC1AB;
-    --green: #1B5B31;
-    --grey: #F5F0EC;
-    --dark: #111111;
-    --lightGreen: #338650;
+  --beige: #dcc1ab;
+  --green: #1b5b31;
+  --grey: #f5f0ec;
+  --dark: #111111;
+  --lightGreen: #338650;
 }

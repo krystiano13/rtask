@@ -112,163 +112,172 @@
           </div>
         </div>
       </nav>
+    </header>
 
-      <!-- Intro -->
-      <section class="Intro container-fluid row">
-        <div
-          class="Intro__left column col-lg-7 d-flex flex-column justify-content-center"
-        >
-          <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
-          <p>
-            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-            realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-            podejściem do każdego projektu.
-          </p>
-          <div class="Intro__left__buttons d-flex">
-            <button class="me-4 button-filled text-white border-0">
-              Skontaktuj się z nami
-            </button>
-            <button
-              class="me-4 align-items-center d-flex justify-content-center button-default"
-            >
-              Zobacz nasze realizacje
-              <img
-                class="button-icon ms-2"
-                alt="arrow"
-                src="./assets/arrow.svg"
-              />
-            </button>
-          </div>
+    <!-- Intro -->
+    <section class="Intro container-fluid row">
+      <div
+        class="Intro__left column col-lg-7 d-flex flex-column justify-content-center"
+      >
+        <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
+        <p>
+          Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+          realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+          podejściem do każdego projektu.
+        </p>
+        <div class="Intro__left__buttons d-flex">
+          <button class="me-4 button-filled text-white border-0">
+            Skontaktuj się z nami
+          </button>
+          <button
+            class="me-4 align-items-center d-flex justify-content-center button-default"
+          >
+            Zobacz nasze realizacje
+            <img
+              class="button-icon ms-2"
+              alt="arrow"
+              src="./assets/arrow.svg"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- Slider -->
+
+      <div
+        class="Intro__right column col-lg-5 d-flex justify-content-end align-items-end"
+      >
+        <div class="Intro__right__slideButtons d-flex">
+          <button
+            class="Intro__right__slideButtons__btn"
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide="prev"
+          >
+            <img alt="arrow left" src="./assets/ButtonArrow.svg" />
+          </button>
+
+          <button
+            class="Intro__right__slideButtons__btn"
+            type="button"
+            data-bs-target="#hero-carousel"
+            data-bs-slide="next"
+          >
+            <img alt="arrow right" id="right" src="./assets/ButtonArrow.svg" />
+          </button>
         </div>
 
-        <!-- Slider -->
-
         <div
-          class="Intro__right column col-lg-5 d-flex justify-content-end align-items-end"
+          id="hero-carousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
         >
-          <div class="Intro__right__slideButtons d-flex">
-            <button
-              class="Intro__right__slideButtons__btn"
-              type="button"
-              data-bs-target="#hero-carousel"
-              data-bs-slide="prev"
-            >
-              <img alt="arrow left" src="./assets/ButtonArrow.svg" />
-            </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="Intro-icon" alt="garden" src="./assets/bg2.png" />
+            </div>
 
-            <button
-              class="Intro__right__slideButtons__btn"
-              type="button"
-              data-bs-target="#hero-carousel"
-              data-bs-slide="next"
-            >
-              <img
-                alt="arrow right"
-                id="right"
-                src="./assets/ButtonArrow.svg"
-              />
-            </button>
-          </div>
+            <div class="carousel-item">
+              <img class="Intro-icon" alt="garden" src="./assets/garden.avif" />
+            </div>
 
-          <div
-            id="hero-carousel"
-            class="carousel slide carousel-fade"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="Intro-icon" alt="garden" src="./assets/bg2.png" />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  class="Intro-icon"
-                  alt="garden"
-                  src="./assets/garden.avif"
-                />
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  class="Intro-icon"
-                  alt="garden"
-                  src="./assets/garden2.jpg"
-                />
-              </div>
+            <div class="carousel-item">
+              <img class="Intro-icon" alt="garden" src="./assets/garden2.jpg" />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Offer -->
-      <section class="Offer container-fluid">
-        <div class="Offer__text container-fluid">
-          <p>Oferta</p>
-          <h2>Działamy <i>kompleksowo</i></h2>
-          <p class="lead">
-            Oferujemy kompletną obsługę inwestycji terenów zielonych.
-            Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
-            Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie,
-            a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+    <!-- Offer -->
+    <section class="Offer container-fluid">
+      <div class="Offer__text container-fluid">
+        <p>Oferta</p>
+        <h2>Działamy <i>kompleksowo</i></h2>
+        <p class="lead">
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+          nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla
+          Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+          etapie posłużymy radą i wieloletnim doświadczeniem.
+        </p>
+      </div>
+      <div class="Offer__cards row justify-content-evenly">
+        <section
+          class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
+        >
+          <img class="offer-icon" src="./assets/pencil.png" alt="pencil" />
+          <h3>Projekty</h3>
+          <p>
+            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+            wykorzystaniem istniejącej przestrzeni.
           </p>
-        </div>
-        <div class="Offer__cards row justify-content-evenly">
-          <section
-            class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
-          >
-            <img class="offer-icon" src="./assets/pencil.png" alt="pencil" />
-            <h3>Projekty</h3>
-            <p>
-              Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
-              wykorzystaniem istniejącej przestrzeni.
-            </p>
-            <a class="Offer__cards__card__link">
-              Dowiedz się więcej
-              <img
-                class="link-icon"
-                src="./assets/rightArrow.svg"
-                alt="arrow faced to the right"
-              />
-            </a>
-          </section>
-          <section
-            class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
-          >
-            <img class="offer-icon" src="./assets/eye.png" alt="eye" />
-            <h3>Wizualizacje</h3>
-            <p>
-              Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
-              animowanego w technologii 3D.
-            </p>
-            <a class="Offer__cards__card__link">
-              Dowiedz się więcej
-              <img
-                class="link-icon"
-                src="./assets/rightArrow.svg"
-                alt="arrow faced to the right"
-              />
-            </a>
-          </section>
-          <section
-            class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
-          >
-            <img class="offer-icon" src="./assets/stars.png" alt="stars" />
-            <h3>Realizacje</h3>
-            <p>
-              Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
-              zaawansowanych technologii.
-            </p>
-            <a class="Offer__cards__card__link"
-              >Dowiedz się więcej
-              <img
-                class="link-icon"
-                src="./assets/rightArrow.svg"
-                alt="arrow faced to the right"
-              />
-            </a>
-          </section>
-        </div>
+          <a class="Offer__cards__card__link">
+            Dowiedz się więcej
+            <img
+              class="link-icon"
+              src="./assets/rightArrow.svg"
+              alt="arrow faced to the right"
+            />
+          </a>
+        </section>
+        <section
+          class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
+        >
+          <img class="offer-icon" src="./assets/eye.png" alt="eye" />
+          <h3>Wizualizacje</h3>
+          <p>
+            Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+            animowanego w technologii 3D.
+          </p>
+          <a class="Offer__cards__card__link">
+            Dowiedz się więcej
+            <img
+              class="link-icon"
+              src="./assets/rightArrow.svg"
+              alt="arrow faced to the right"
+            />
+          </a>
+        </section>
+        <section
+          class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
+        >
+          <img class="offer-icon" src="./assets/stars.png" alt="stars" />
+          <h3>Realizacje</h3>
+          <p>
+            Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+            zaawansowanych technologii.
+          </p>
+          <a class="Offer__cards__card__link"
+            >Dowiedz się więcej
+            <img
+              class="link-icon"
+              src="./assets/rightArrow.svg"
+              alt="arrow faced to the right"
+            />
+          </a>
+        </section>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="About container-fluid">
+      <div class="About__left"></div>
+      <section class="About__right">
+        <p class="About__sectionName">O firmie</p>
+        <h2 class="About__title">Tworzymy z pasją</h2>
+        <p class="lead About__content">
+          Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+          wykwalifikowani projektanci oraz architekci, których zadaniem jest
+          rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja
+          to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria
+          i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+          współczesnego trybu życia.
+        </p>
+        <button class="About__button">
+          Poznaj nas bliżej
+          <img src="./assets/rightArrowWhite.svg" alt="white arrow faced right" />
+        </button>
       </section>
-    </header>
+    </section>
   </body>
 </html>
