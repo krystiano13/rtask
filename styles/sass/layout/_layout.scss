@@ -48,6 +48,10 @@
   box-sizing: border-box;
   height: 105vh;
 
+  @media screen and (max-width : 992px) {
+    height : auto;
+  }
+
   @media screen and (min-width : 2400px) {
     height : 93vh;
   }
@@ -56,3 +60,10 @@
     height : auto;
   }
 }
+
+.About {
+  @media screen and (max-width : 992px) {
+    height : auto;
+  }
+}
+

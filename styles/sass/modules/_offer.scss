@@ -16,6 +16,10 @@
       font-size: 3rem;
       font-family: "Montserrat", sans-serif;
 
+      @media screen and (max-width: 992px) {
+        font-size: 2.5rem;
+      }
+
       @media screen and (min-width: 2400px) {
         font-size: 5rem;
       }
@@ -46,7 +50,7 @@
         font-size: 1.35rem;
       }
 
-       @media screen and (min-width: 3200px) {
+      @media screen and (min-width: 3200px) {
         padding-top: 3rem;
         font-size: 3rem;
       }
@@ -66,7 +70,7 @@
         padding-bottom: 1.5rem;
       }
 
-       @media screen and (min-width: 3200px) {
+      @media screen and (min-width: 3200px) {
         padding-top: 4.5rem;
         padding-bottom: 4.5rem;
       }
@@ -101,13 +105,13 @@
       @media screen and (min-width: 2400px) {
         height: 36rem;
         padding: 2.5rem;
-        margin-top : 3rem;
+        margin-top: 3rem;
       }
 
       @media screen and (min-width: 3200px) {
         height: 48rem;
         padding: 5rem;
-        margin-top : 6rem;
+        margin-top: 6rem;
       }
 
       * {
@@ -176,11 +180,11 @@
         }
 
         @media screen and (min-width: 2400px) {
-          font-size : 1.25rem;
+          font-size: 1.25rem;
         }
 
-         @media screen and (min-width: 3200px) {
-          font-size : 1.5rem;
+        @media screen and (min-width: 3200px) {
+          font-size: 1.5rem;
         }
       }
 
