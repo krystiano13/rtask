@@ -30,7 +30,8 @@
 
 .Intro .column,
 .Intro-slider,
-.Offer {
+.Offer,
+.About {
   height: 90vh;
   min-height: 600px;
 
@@ -45,7 +46,7 @@
   width : 100%;
   background-color: var(--grey);
   box-sizing: border-box;
-  height: auto;
+  height: 105vh;
 
   @media screen and (min-width : 2400px) {
     height : 93vh;
