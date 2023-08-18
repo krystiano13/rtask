@@ -10,7 +10,7 @@
       flex-wrap: nowrap;
 
       &__text {
-        width : calc(7/12 * 100%);
+        width: calc(7 / 12 * 100%);
       }
     }
 
@@ -26,6 +26,14 @@
         max-width: none;
       }
 
+      @media screen and (min-width: 2400px) {
+        font-size: 3.75rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 5.5rem;
+      }
+
       i {
         font-family: "Inter", sans-serif;
         color: var(--grey);
@@ -33,8 +41,8 @@
     }
 
     &__other {
-      @media screen and (max-width : 992px) {
-        width : calc(5/12 * 100%);
+      @media screen and (max-width: 992px) {
+        width: calc(5 / 12 * 100%);
       }
       &__p {
         font-size: 1.25rem;
@@ -46,6 +54,17 @@
         @media screen and (max-width: 992px) {
           font-size: 0.65rem;
           max-width: 100%;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.7rem;
+          margin-bottom: 1.5rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 3rem;
+          max-width: 80%;
+          margin-bottom: 3rem;
         }
       }
 
@@ -65,6 +84,22 @@
           width: 90%;
           padding-top: 0.4rem;
           padding-bottom: 0.4rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.3rem;
+          margin-top: 1.5rem;
+          border-radius: 2.25rem;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 2rem;
+          margin-top: 3rem;
+          border-radius: 3rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
         }
       }
     }
