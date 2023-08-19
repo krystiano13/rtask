@@ -1,9 +1,68 @@
 .Footer {
-    
+  &__separator,
+  &__contactInfo,
+  &__contact,
+  &__rights {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
-    &__separator {
-        width : 100%;
-        height : 0.1rem;
-        background-color: var(--grey);
+  &__contact {
+    &__right {
+      p {
+        color: var(--grey);
+
+        button {
+          color: var(--grey);
+          background-color: var(--green);
+          border: none;
+          padding: 1rem;
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+          border-radius: 3rem;
+          margin-left: 1.5rem;
+        }
+      }
     }
+  }
+
+  &__separator {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--grey);
+  }
+
+  &__contactInfo {
+    &__links {
+      a {
+        color: var(--grey);
+        text-decoration: none;
+        margin-right: 3rem;
+      }
+    }
+
+    &__other {
+      p {
+        color: var(--grey);
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  &__rights {
+    margin-top: 10rem;
+    p {
+      color: var(--grey);
+    }
+
+    &__creator {
+      p {
+        color: var(--grey);
+
+        img {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
 }
