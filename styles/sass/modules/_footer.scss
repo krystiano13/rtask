@@ -8,9 +8,34 @@
   }
 
   &__contact {
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+    }
+    &__logo {
+      img {
+        height: 1.5rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
     &__right {
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
       p {
         color: var(--grey);
+
+        @media screen and (max-width: 992px) {
+          margin-right: 1rem;
+        }
 
         button {
           color: var(--grey);
@@ -21,6 +46,15 @@
           padding-right: 1.2rem;
           border-radius: 3rem;
           margin-left: 1.5rem;
+
+          @media screen and (max-width: 992px) {
+            margin-left: 0;
+            margin-top: 1rem;
+          }
+
+          @media screen and (max-width: 992px) and (min-width : 700px) {
+            margin-left: 1rem;
+          }
         }
       }
     }
@@ -33,11 +67,28 @@
   }
 
   &__contactInfo {
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
     &__links {
       a {
         color: var(--grey);
         text-decoration: none;
         margin-right: 3rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        a {
+          margin: 0;
+          margin-right: 0.3rem;
+          margin-left: 0.3rem;
+        }
       }
     }
 
@@ -45,6 +96,19 @@
       p {
         color: var(--grey);
         margin-left: 3rem;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 1rem;
+
+        p {
+          margin: 0;
+          margin-top: 1rem;
+        }
       }
     }
   }
@@ -63,6 +127,11 @@
           margin-left: 1rem;
         }
       }
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      flex-direction: column;
     }
   }
 }
