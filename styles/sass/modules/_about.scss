@@ -3,7 +3,6 @@
   &__right {
     height: 100%;
     min-height: 600px;
-
   }
 
   &__left {
@@ -71,6 +70,10 @@
       @media screen and (max-width: 992px) {
         font-size: 2.5rem;
         max-width: 90%;
+      }
+
+       @media screen and (max-width: 1100px) {
+        max-width: 35%;
       }
 
       @media screen and (min-width: 2400px) {

@@ -4,7 +4,7 @@
   padding-right: 5rem;
   background-color: white;
   box-sizing: border-box;
-  z-index : 1000;
+  z-index: 1000;
 
   @media screen and (min-width: 2400px) {
     padding: 2rem;
@@ -20,7 +20,6 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
 }
 
 .row {
@@ -37,57 +36,80 @@
 
   @media screen and (min-width: 992px) {
     height: 40rem;
-    min-height: 600px;
   }
 
   @media screen and (min-width: 1400px) {
     height: 52rem;
-    min-height: 600px;
   }
 
   @media screen and (min-width: 1650px) {
     height: 55rem;
-    min-height: 600px;
+  }
+
+  @media screen and (min-width: 2400px) {
+    height: 75rem;
+  }
+
+  @media screen and (min-width: 3200px) {
+    height: 100rem;
   }
 
   padding: 0;
 }
 
 .About {
+  @media screen and (min-width: 992px) and (orientation: portrait) {
+    height: 53rem;
+  }
+
   @media screen and (min-width: 992px) {
+    height: 53rem;
+  }
+
+  @media screen and (min-width: 1200px) {
     height: 47rem;
-    min-height: 600px;
+  }
+
+  @media screen and (min-width: 1650px) {
+    height: 60rem;
+  }
+
+  @media screen and (min-width: 2400px) {
+    height: 80rem;
+  }
+
+  @media screen and (min-width: 3200px) {
+    height: 100rem;
   }
 }
 
 .Offer {
-  width : 100%;
+  width: 100%;
   background-color: var(--grey);
   box-sizing: border-box;
   height: auto;
 
-  @media screen and (max-width : 992px) {
-    height : auto;
+  @media screen and (max-width: 992px) {
+    height: auto;
   }
 
-  @media screen and (min-width : 2400px) {
-    height : 93vh;
+  @media screen and (min-width: 2400px) {
+    height: 93vh;
   }
 
-  @media screen and (min-width : 3200px) {
-    height : auto;
+  @media screen and (min-width: 3200px) {
+    height: auto;
   }
 }
 
 .About {
-  @media screen and (max-width : 992px) {
-    height : auto;
+  @media screen and (max-width: 992px) {
+    height: auto;
   }
 }
 
 .Contact {
-  height : 60vh;
-  min-height : 400px;
+  height: 60vh;
+  min-height: 400px;
   background-color: var(--grey);
 }
-

@@ -87,29 +87,34 @@
     height: auto;
     margin-top: 6rem;
     padding-bottom: 6rem;
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      justify-content: end;
+    }
+
     &__card {
-      height: 30rem;
       background-color: white;
       padding: 2rem;
       border-radius: 2rem;
 
+      @media screen and (max-width: 1100px) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
       @media screen and (max-width: 992px) {
+        height: 30rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
       }
 
-      @media screen and (min-width: 992px) and (max-width: 1100px) {
-        height: 32rem;
-      }
-
       @media screen and (min-width: 2400px) {
-        height: 36rem;
         padding: 2.5rem;
         margin-top: 3rem;
       }
 
       @media screen and (min-width: 3200px) {
-        height: 48rem;
         padding: 5rem;
         margin-top: 6rem;
       }
