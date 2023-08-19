@@ -5,6 +5,11 @@
   &__rights {
     margin-top: 3rem;
     margin-bottom: 3rem;
+
+    @media screen and (min-width: 3200px) {
+      margin-top: 7rem;
+      margin-bottom: 7rem;
+    }
   }
 
   &__contact {
@@ -16,6 +21,14 @@
     &__logo {
       img {
         height: 1.5rem;
+
+        @media screen and (min-width: 2400px) {
+          height: 2rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          height: 3rem;
+        }
       }
 
       @media screen and (max-width: 992px) {
@@ -37,6 +50,14 @@
           margin-right: 1rem;
         }
 
+        @media screen and (min-width: 2400px) {
+          font-size: 1.25rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 1.6rem;
+        }
+
         button {
           color: var(--grey);
           background-color: var(--green);
@@ -52,8 +73,16 @@
             margin-top: 1rem;
           }
 
-          @media screen and (max-width: 992px) and (min-width : 700px) {
+          @media screen and (max-width: 992px) and (min-width: 700px) {
             margin-left: 1rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            padding: 1.6rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 4rem;
+            margin-left: 2.5rem;
           }
         }
       }
@@ -64,6 +93,14 @@
     width: 100%;
     height: 0.1rem;
     background-color: var(--grey);
+
+    @media screen and (min-width: 2400px) {
+      height: 0.15rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      height: 0.25rem;
+    }
   }
 
   &__contactInfo {
@@ -77,6 +114,14 @@
         color: var(--grey);
         text-decoration: none;
         margin-right: 3rem;
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.25rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 1.6rem;
+        }
       }
 
       @media screen and (max-width: 992px) {
@@ -88,6 +133,14 @@
           margin: 0;
           margin-right: 0.3rem;
           margin-left: 0.3rem;
+
+          @media screen and (min-width: 2400px) {
+            font-size: 1.25rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            font-size: 1.6rem;
+          }
         }
       }
     }
@@ -96,6 +149,14 @@
       p {
         color: var(--grey);
         margin-left: 3rem;
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.25rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 1.6rem;
+        }
       }
 
       @media screen and (max-width: 992px) {
@@ -117,11 +178,27 @@
     margin-top: 10rem;
     p {
       color: var(--grey);
+
+      @media screen and (min-width: 2400px) {
+        font-size: 1.25rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 1.6rem;
+      }
     }
 
     &__creator {
       p {
         color: var(--grey);
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.25rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 1.6rem;
+        }
 
         img {
           margin-left: 1rem;

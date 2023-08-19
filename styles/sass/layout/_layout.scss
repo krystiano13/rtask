@@ -125,4 +125,12 @@
     height: 45rem;
     padding : 0.5rem;
   }
+
+  @media screen and (min-width : 2400px) {
+    height: 45rem;
+  }
+
+   @media screen and (min-width : 3200px) {
+    height: 65rem;
+  }
 }
