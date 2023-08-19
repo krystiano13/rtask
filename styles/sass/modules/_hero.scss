@@ -1,7 +1,7 @@
 .Intro {
   &__right {
     width: calc(5 / 12 * 100%);
-    height: 90vh;
+    height: 55rem;
     min-height: 600px;
 
     @media screen and (max-width: 992px) {
@@ -10,7 +10,7 @@
     }
 
     @media screen and (min-width: 1400px) {
-      height: 93vh;
+      height: 50rem;
       min-height: 600px;
     }
 
@@ -52,14 +52,19 @@
   .column {
     .Intro-icon {
       width: 100%;
-      height: 94vh;
+      height: 55rem;
       min-height: 600px;
       object-fit: cover;
+
+      @media screen and (orientation : portrait) {
+        height : 93vh;
+      }
     }
   }
 
   &__left {
     background-color: var(--beige);
+    height: 55rem;
     @media screen and (max-width: 992px) {
       width: 100vw;
       height: 93vh;

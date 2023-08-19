@@ -35,11 +35,29 @@
   height: 90vh;
   min-height: 600px;
 
-  @media screen and (min-width: 1400px) {
-    height: 93vh;
+  @media screen and (min-width: 992px) {
+    height: 40rem;
     min-height: 600px;
   }
+
+  @media screen and (min-width: 1400px) {
+    height: 52rem;
+    min-height: 600px;
+  }
+
+  @media screen and (min-width: 1650px) {
+    height: 55rem;
+    min-height: 600px;
+  }
+
   padding: 0;
+}
+
+.About {
+  @media screen and (min-width: 992px) {
+    height: 47rem;
+    min-height: 600px;
+  }
 }
 
 .Offer {
