@@ -28,7 +28,7 @@
     <script defer src="./scripts/searchbar.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script defer src="./scripts/gallery.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./scripts/scrollAnimations.js"></script>
   </head>
@@ -239,7 +239,8 @@
             />
           </a>
         </section>
-        <section data-aos="fade-up"
+        <section
+          data-aos="fade-up"
           class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
         >
           <img class="offer-icon" src="./assets/eye.png" alt="eye" />
@@ -257,7 +258,8 @@
             />
           </a>
         </section>
-        <section data-aos="fade-up"
+        <section
+          data-aos="fade-up"
           class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
         >
           <img class="offer-icon" src="./assets/stars.png" alt="stars" />
@@ -312,43 +314,80 @@
         <p class="Gallery__text__p">Realizacje</p>
         <h2 class="Gallery__text__title">Nasze <i>projekty</i></h2>
       </div>
-      <div class="Gallery__images">
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery1.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery2.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery3.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery4.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery5.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery6.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery7.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery8.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery9.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery10.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery11.jpg" alt="gallery image" />
-        </div>
-        <div class="image">
-          <img data-aos="fade-up" src="./assets/galleryImages/gallery12.jpg" alt="gallery image" />
-        </div>
+      <div data-aos="fade-up" class="Gallery__images">
+        <img
+          src="./assets/galleryImages/gallery1.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery2.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery3.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery4.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery5.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery6.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery7.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery8.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery9.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery10.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery11.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        /><img
+          src="./assets/galleryImages/gallery12.jpg"
+          alt="gallery image"
+          class="image"
+          loading="lazy"
+          fetchpriority="low"
+        />
       </div>
     </section>
 
