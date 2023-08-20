@@ -18,6 +18,15 @@
     background-color: transparent;
 
     transition: border-color 250ms, background-color 250ms;
+
+    @media screen and (min-width: 2400px) {
+       border: solid var(--grey) 4px;
+    }
+
+     @media screen and (min-width: 3200px) {
+       border: solid var(--grey) 8px;
+    }
+
   }
 
   &__bar {
@@ -32,6 +41,24 @@
       padding: 0.6rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
+
+      @media screen and (min-width: 2400px) {
+        transform: translateY(2rem);
+        font-size: 2.1rem;
+        border-radius: 2rem;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 4rem;
+        border-radius: 4rem;
+        transform: translateY(4rem);
+        padding: 1.4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
     }
 
     &__btn:hover {
@@ -55,6 +82,20 @@
       height: 3rem;
       font-size: 1.3rem;
     }
+
+    @media screen and (min-width: 2400px) {
+      width: 7rem;
+      height: 7rem;
+      font-size: 2.1rem;
+      border-radius: 2rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      width: 12rem;
+      height: 12rem;
+      font-size: 4rem;
+      border-radius: 4rem;
+    }
   }
 
   &__btn:hover {
@@ -67,6 +108,14 @@
     &__image {
       max-width: calc(6 / 12 * 100%);
       position: absolute;
+
+      @media screen and (min-width: 2400px) {
+        transform: scale(1.25);
+      }
+
+      @media screen and (min-width: 3200px) {
+        transform: scale(1.8);
+      }
     }
   }
 }
