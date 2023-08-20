@@ -2,6 +2,8 @@ const images = document.querySelector('.Gallery__images');
 const popUpGalleryImage = document.querySelector('.GalleryPopup__images__image');
 const popUpButtonLeft = document.querySelector('#popUpLeft');
 const popUpButtonRight = document.querySelector("#popUpRight");
+const popUpHideButton = document.querySelector(".GalleryPopup__bar__btn");
+const popUpSection = document.querySelector('.GalleryPopup');
 
 let popUpImageId = 1;
 
@@ -16,6 +18,24 @@ const macy = Macy({
     }
 });
 
+const hidePopUp = () => {
+    popUpSection.classList.add('hidden');
+}
+
+const showPopUp = () => {
+  popUpSection.classList.remove("hidden");
+};
+
+const handleShowPopUp = (e) => {
+    if (e.target.tagName === "IMG") {
+        const id = Number(e.target.id);
+        popUpImageId = id;
+
+        popUpGalleryImage.src = `./assets/galleryImages/gallery${popUpImageId}.webp`;
+        showPopUp();
+    }
+}
+
 const changeImage = (left) => {
     if (left && popUpImageId > 1) {
         popUpImageId--;
@@ -29,3 +49,5 @@ const changeImage = (left) => {
 
 popUpButtonLeft.addEventListener('click', () => changeImage(true));
 popUpButtonRight.addEventListener('click', () => changeImage(false));
+popUpHideButton.addEventListener('click', () => hidePopUp());
+images.addEventListener('click', (e) => handleShowPopUp(e));

@@ -1,15 +1,67 @@
 .GalleryPopup {
-    width : 100%;
-    height : 100vh;
-    min-height: 600px;
-    background-color: #333333a8;
-    top: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-color: #333333ec;
+  top: 0;
 
-    &__images {
-        width : calc(8/12 * 100%);
-        &__image {
-            max-width : calc(6/12 * 100%);
-            position: absolute;
-        } 
+  transform: scale(1);
+  opacity: 1;
+
+  transition: opacity 250ms, transform 250ms;
+  will-change: opacity, transform;
+
+  @mixin popUpButton($radius) {
+    border: solid var(--grey) 2px;
+    border-radius: 2rem;
+    color: var(--grey);
+    background-color: transparent;
+
+    transition: border-color 250ms, background-color 250ms;
+  }
+
+  &__bar {
+    height: 15%;
+
+    &__btn {
+      @include popUpButton(2rem);
+      padding: 0.6rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
+
+    &__btn:hover {
+      background-color: var(--green);
+      border-color: transparent;
+    }
+  }
+
+  &__gallery {
+    height: 85%;
+  }
+
+  &__btn {
+    width: 5rem;
+    height: 5rem;
+    @include popUpButton(1rem);
+    font-size: 1.6rem;
+  }
+
+  &__btn:hover {
+    background-color: var(--green);
+    border-color: transparent;
+  }
+
+  &__images {
+    width: calc(8 / 12 * 100%);
+    &__image {
+      max-width: calc(6 / 12 * 100%);
+      position: absolute;
+    }
+  }
+}
+
+.hidden {
+  transform: scale(0);
+  opacity: 0;
 }

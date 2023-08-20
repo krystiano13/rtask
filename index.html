@@ -326,6 +326,7 @@
             src="./assets/galleryImages/gallery1.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="1"
           />
         </div>
         <div class="image">
@@ -333,6 +334,7 @@
             src="./assets/galleryImages/gallery2.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="2"
           />
         </div>
         <div class="image">
@@ -340,6 +342,7 @@
             src="./assets/galleryImages/gallery3.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="3"
           />
         </div>
         <div class="image">
@@ -347,6 +350,7 @@
             src="./assets/galleryImages/gallery4.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="4"
           />
         </div>
         <div class="image">
@@ -354,6 +358,7 @@
             src="./assets/galleryImages/gallery5.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="5"
           />
         </div>
         <div class="image">
@@ -361,6 +366,7 @@
             src="./assets/galleryImages/gallery6.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="6"
           />
         </div>
         <div class="image">
@@ -368,6 +374,7 @@
             src="./assets/galleryImages/gallery7.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="7"
           />
         </div>
         <div class="image">
@@ -375,6 +382,7 @@
             src="./assets/galleryImages/gallery8.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="8"
           />
         </div>
         <div class="image">
@@ -382,6 +390,7 @@
             src="./assets/galleryImages/gallery9.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="9"
           />
         </div>
         <div class="image">
@@ -389,6 +398,7 @@
             src="./assets/galleryImages/gallery10.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="10"
           />
         </div>
         <div class="image">
@@ -396,6 +406,7 @@
             src="./assets/galleryImages/gallery11.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="11"
           />
         </div>
         <div class="image">
@@ -403,6 +414,7 @@
             src="./assets/galleryImages/gallery12.webp"
             alt="gallery Image"
             data-aos="fade-up"
+            id="12"
           />
         </div>
       </div>
@@ -481,16 +493,25 @@
     </footer>
 
     <!-- Gallery PopUp -->
-    <section class="GalleryPopup container-fluid row position-fixed">
-      <button id="popUpLeft" class="GalleryPopup__btn col-2"><</button>
-      <div class="GalleryPopup__images col-8 d-flex justify-content-center align-items-center">
-        <img
-          src="./assets/galleryImages/gallery1.webp"
-          alt="gallery image"
-          class="GalleryPopup__images__image"
-        />
+    <section class="GalleryPopup container-fluid position-fixed hidden">
+      <div class="GalleryPopup__bar d-flex align-items-end justify-content-end">
+        <button class="GalleryPopup__bar__btn">Zamknij</button>
       </div>
-      <button id="popUpRight" class="GalleryPopup__btn col-2">></button>
+      <div
+        class="GalleryPopup__gallery row justify-content-evenly align-items-center"
+      >
+        <button id="popUpLeft" class="GalleryPopup__btn col-2"><</button>
+        <div
+          class="GalleryPopup__images col-8 d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="./assets/galleryImages/gallery1.webp"
+            alt="gallery image"
+            class="GalleryPopup__images__image"
+          />
+        </div>
+        <button id="popUpRight" class="GalleryPopup__btn col-2">></button>
+      </div>
     </section>
   </body>
 </html>
