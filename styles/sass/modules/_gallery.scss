@@ -1,13 +1,17 @@
 .Gallery {
     &__images {
         width : 100%;
-        justify-content: space-between;
 
         .image {
             width : 30%;
 
             img {
-                width : 100%;            
+                width : 100%;
+                
+                @media screen and (max-width : 992px) {
+                    width : 90%;
+                    margin-left : 5%;
+                }
             }
         }
     }
