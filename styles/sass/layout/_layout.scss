@@ -89,17 +89,20 @@
   box-sizing: border-box;
   height: auto;
 
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 992px) and (orientation: portrait) {
     height: auto;
+  }
+
+  @media screen and (min-width: 1650px) {
+    height: 65rem;
   }
 
   @media screen and (min-width: 2400px) {
-    height: 93vh;
+    height: 90rem;
   }
 
   @media screen and (min-width: 3200px) {
-    height: auto;
-    
+    height: 150rem;
   }
 }
 
@@ -133,4 +136,9 @@
    @media screen and (min-width : 3200px) {
     height: 65rem;
   }
+}
+
+.Gallery {
+  background-color: var(--beige);
+  height: 200rem;
 }
