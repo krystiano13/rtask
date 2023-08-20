@@ -51,6 +51,7 @@
     @media screen and (max-width: 992px) {
       padding-left: 2.5%;
     }
+
   }
 
   &__images {
@@ -58,11 +59,14 @@
 
     .image {
       width: 30%;
-      object-fit: cover;
 
-      @media screen and (max-width: 992px) {
-        padding-left : 2.5%;
-        padding-right : 2.5%;
+      img {
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+          width: 90%;
+          margin-left: 5%;
+        }
       }
     }
   }
