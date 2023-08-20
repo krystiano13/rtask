@@ -75,6 +75,10 @@
       border-radius: 2rem;
       pointer-events: all;
 
+      @media screen and (max-width : 992px) {
+        margin-bottom: 7.5%;
+      }
+
       img {
         margin-left : 1rem;
       }
