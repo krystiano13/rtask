@@ -1,7 +1,4 @@
-AOS.init(
-    {
-        duration: 450,
-        anchorPlacement: 'top-bottom',
-        once: false
-    }
-);
+AOS.init({
+  duration: 450,
+  once: false,
+});
