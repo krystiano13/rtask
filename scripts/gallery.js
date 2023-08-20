@@ -23,7 +23,7 @@ const hidePopUp = () => {
 }
 
 const showPopUp = () => {
-  popUpSection.classList.remove("hidden");
+    popUpSection.classList.remove("hidden");
 };
 
 const handleShowPopUp = (e) => {
