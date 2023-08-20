@@ -1,18 +1,73 @@
 .Gallery {
-    &__images {
-        width : 100%;
+  &__text {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 10%;
 
-        .image {
-            width : 30%;
+    h2 {
+      font-size: 3rem;
+      font-family: "Montserrat", sans-serif;
 
-            img {
-                width : 100%;
-                
-                @media screen and (max-width : 992px) {
-                    width : 90%;
-                    margin-left : 5%;
-                }
-            }
-        }
+      @media screen and (max-width: 992px) {
+        font-size: 2.5rem;
+      }
+
+      @media screen and (min-width: 2400px) {
+        font-size: 5rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        font-size: 8rem;
+      }
+
+      i {
+        font-family: "Inter", sans-serif;
+      }
     }
+
+    p {
+      color: var(--green);
+      max-width: 47%;
+      font-size: 1.1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0rem;
+
+      @media screen and (max-width: 992px) {
+        padding-left: 1rem;
+        max-width: 85%;
+      }
+
+      @media screen and (min-width: 2400px) {
+        padding-top: 1.5rem;
+        font-size: 1.35rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        padding-top: 3rem;
+        font-size: 3rem;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-left: 2.5%;
+    }
+
+  }
+
+  &__images {
+    width: 100%;
+
+    .image {
+      width: 30%;
+
+      img {
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+          width: 90%;
+          margin-left: 5%;
+        }
+      }
+    }
+  }
 }
