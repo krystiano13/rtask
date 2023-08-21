@@ -175,6 +175,10 @@
           margin-top: 1rem;
         }
 
+        @media screen and (max-width : 1100px) {
+          font-size: 0.9rem;
+        }
+
         @media screen and (min-width: 1400px) {
           font-size: 1.3rem;
           padding-left: 2rem;
