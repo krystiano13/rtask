@@ -7,6 +7,10 @@
       padding-left: 2.5%;
     }
 
+    @media screen and (max-width: 1200px){
+      padding-left: 10%;
+    }
+
     @media screen and (min-width: 1200px) {
       padding-left: 12rem;
     }
