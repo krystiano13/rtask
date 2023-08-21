@@ -231,7 +231,7 @@
         color: var(--lightGreen);
 
         .link-icon {
-          transform : translateX(25%);
+          transform: translateX(25%);
         }
       }
 
@@ -247,7 +247,8 @@
     }
 
     &__card:hover {
-      box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
     }
 
     &__card:active {

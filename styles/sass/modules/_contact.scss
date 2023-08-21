@@ -97,6 +97,8 @@
         padding-top: 0.6rem;
         padding-bottom: 0.6rem;
 
+        transition: background-color 250ms;
+
         @media screen and (max-width: 992px) {
           font-size: 0.9rem;
           max-width: 100%;
@@ -120,6 +122,10 @@
           padding-top: 1rem;
           padding-bottom: 1rem;
         }
+      }
+
+      &__btn:hover {
+        background-color: var(--beige);
       }
     }
   }

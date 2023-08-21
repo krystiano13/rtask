@@ -156,8 +156,15 @@
       img {
         margin: 0;
         margin-left: 1rem;
+        transition: transform 250ms;
 
         height: 60%;
+      }
+    }
+
+    &__button:hover {
+      img {
+        transform: translateX(25%);
       }
     }
   }
