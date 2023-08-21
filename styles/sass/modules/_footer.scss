@@ -68,7 +68,7 @@
           border-radius: 3rem;
           margin-left: 1.5rem;
 
-          transition : background-color 250ms;
+          transition: background-color 250ms;
 
           @media screen and (max-width: 992px) {
             margin-left: 0;
@@ -116,10 +116,14 @@
       justify-content: center;
     }
     &__links {
-      a {
+      &__link {
         color: var(--grey);
         text-decoration: none;
         margin-right: 3rem;
+        position: relative;
+        display: block;
+        text-align: center;
+        transition: transform 250ms;
 
         @media screen and (min-width: 2400px) {
           font-size: 1.25rem;
@@ -128,6 +132,26 @@
         @media screen and (min-width: 3200px) {
           font-size: 1.6rem;
         }
+      }
+
+      &__link::after {
+        width: 100%;
+        position: absolute;
+        background-color: var(--grey);
+        content: "";
+        height: 5%;
+        display: block;
+        transform: scaleX(0);
+        transition: transform 250ms;
+      }
+
+      &__link:hover {
+        color: var(--grey);
+        transform: translateY(-15%);
+      }
+
+      &__link:hover::after {
+        transform: scaleX(1);
       }
 
       @media screen and (max-width: 992px) {
