@@ -35,6 +35,7 @@
 
   &__bar {
     height: 15%;
+    z-index: 6000;
 
     @media screen and (max-height: 900px) {
       padding-top: 8rem;
@@ -45,6 +46,7 @@
       padding: 0.6rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
+      z-index: 6000;
 
       @media screen and (min-width: 2400px) {
         transform: translateY(2rem);
