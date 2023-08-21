@@ -6,6 +6,7 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>SCSS</li>
+    <li>Javascript<li>
     <li>Gulp</li>
     <li>Macy.js</li>
     <li>AOS.js</li>
